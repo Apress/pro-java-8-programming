@@ -1,0 +1,5 @@
+PrintService service = PrintServiceLookup.lookupDefaultPrintService();
+DocFlavor flavor = DocFlavor.URL.GIF;
+if (!service.isDocFlavorSupported(flavor)) {
+    System.err.println("The printer does not support the appropriate DocFlavor");
+}

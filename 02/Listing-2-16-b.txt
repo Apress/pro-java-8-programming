@@ -1,0 +1,6 @@
+MailMessage message = new MailMessage("bspell", "jsmith", "This is a test");
+System.out.println("Calling toString(): " + message);
+
+// The following line is equivalent to the previous one and would produce
+// exactly the same output if it were compiled and executed:
+// System.out.println("Calling toString(): " + message.toString());

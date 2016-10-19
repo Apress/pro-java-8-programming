@@ -1,0 +1,10 @@
+PrintJobAttributeListener listener = new PrintJobAttributeListener() {
+    public void attributeUpdate(PrintJobAttributeEvent event) {
+        PrintJobAttributeSet attrSet = event.getAttributes();
+        Attribute attr = attrSet.get(JobMediaSheetsCompleted.class);
+        if (attr != null) {
+            JobMediaSheetsCompleted sheets = (JobMediaSheetsCompleted)attr;
+            System.out.println("Finished printing page " + sheets.getValue());
+        }
+    }
+};

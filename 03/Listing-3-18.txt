@@ -1,0 +1,4 @@
+Optional<String> firstItem = items.stream().
+        filter(e -> (e.startsWith(prefix))).
+        filter(e -> (e.endsWith(suffix))).
+        findFirst();

@@ -1,0 +1,10 @@
+resourceLock.lock();
+try {
+  doSomething();
+}
+catch (Exception e) {
+  logError("An error occurred calling doFinally()");
+}
+finally {
+  resourceLock.unlock();
+}

@@ -1,0 +1,11 @@
+class MyRunnable implements Runnable {
+
+    public void run() {
+        performLongRunningTask();
+    }
+
+    private void performLongRunningTask() {
+        // Do some work here
+    }
+
+}

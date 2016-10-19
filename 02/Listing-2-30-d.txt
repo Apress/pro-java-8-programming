@@ -1,0 +1,5 @@
+boolean systemValid;
+.
+.
+.
+assert systemValid;

@@ -1,0 +1,11 @@
+List<String> items;
+String prefix;
+.
+.
+.
+for (ListIterator<String> iterator = items.listIterator(); iterator.hasNext(); ) {
+    String item = iterator.next();
+    if (item.startsWith(prefix)) {
+        iterator.remove();
+    }
+}

@@ -1,0 +1,2 @@
+ThreadPoolExecutor executor = getExecutor();
+executor.execute(() -> performLongRunningTask());

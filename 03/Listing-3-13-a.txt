@@ -1,0 +1,3 @@
+class ApplicationFacade implements ResourceController, ApplicationManager
+{
+}

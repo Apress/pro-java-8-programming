@@ -1,0 +1,3 @@
+ZonedDateTime timestamp = ZonedDateTime.of(2015, 7, 4, 12, 30, 0, 0, ZoneId.systemDefault());
+DateTimeFormatter formatter = DateTimeFormatter.ofStyle("HH:mm a zzz MM/dd/yyyy");
+System.out.println(formatter.format(timestamp));

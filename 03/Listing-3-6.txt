@@ -1,0 +1,9 @@
+Comparator<String> numericStringSorter = new Comparator<String>() {
+    public int compare(String s1, String s2) {
+        int i1 = Integer.valueOf(s1);
+        int i2 = Integer.valueOf(s2);
+        int relativeValue = Integer.compare(i1, i2);
+        return relativeValue;
+    }
+};
+Arrays.sort(stringsToSort, numericStringSorter());

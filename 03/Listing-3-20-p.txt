@@ -1,0 +1,4 @@
+LocalDate newYears2015 = LocalDate.of(2015, Month.JANUARY, 1);
+MonthDay groundhogDay = MonthDay.of(Month.FEBRUARY, 2);
+LocalDate groundhogDate = newYears2015.with(groundhogDay);
+System.out.println(groundhogDate);

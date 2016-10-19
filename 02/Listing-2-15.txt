@@ -1,0 +1,9 @@
+public boolean equals(Object obj) {
+  if ((obj != null) && (obj instanceof Employee)) {
+    Employee emp = (Employee)obj;
+    if (this.employeeID == emp.employeeID) {
+      return true;
+    }
+  }
+  return false;
+}

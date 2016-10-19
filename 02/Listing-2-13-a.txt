@@ -1,0 +1,15 @@
+// Create a new instance of MailMessage
+MailMessage original = new MailMessage("bspell", "jsmith",
+                                       "This is the original text");
+
+// Create a shallow copy
+MailMessage shallowCopy = (MailMessage)(original.clone());
+
+// Get a reference to the copy's message text
+StringBuffer text = shallowCopy.getMessageText();
+
+// Modify the message text using the clone/shallow copy
+text.append(" with some additional text appended");
+
+// Now print out the message text using the original MailMessage
+System.out.println(original.getMessageText().toString());

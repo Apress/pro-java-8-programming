@@ -1,0 +1,12 @@
+Paper paperA4 = new Paper();
+double inchesPerMillimeter = 0.0394;
+double widthInInches = inchesPerMillimeter * 210;
+double heightInInches = inchesPerMillimeter * 297;
+double marginSizeInInches = inchesPerMillimeter * 25;
+double widthInPoints = widthInInches * 72;
+double heightInPoints = heightInInches * 72;
+double marginSizeInPoints = marginSizeInInches * 72;
+double availableWidth = widthInPoints - (marginSizeInPoints * 2);
+double availableHeight = heightInPoints - (marginSizeInPoints * 2);
+paperA4.setImageableArea(marginSizeInPoints, marginSizeInPoints,
+        availableWidth, availableHeight);

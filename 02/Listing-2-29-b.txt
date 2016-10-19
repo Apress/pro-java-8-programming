@@ -1,0 +1,13 @@
+try {
+  Connection connection = DriverManager.getConnection(url, userid, password);
+  Statement statement = connection.createStatement();
+  ResultSet results = null;
+  results = statement.executeQuery(
+      "SELECT * FROM CUSTOMERS WHERE CUSTID = 123");
+  if (results.next()) {
+    String custname = results.getString("CUSTNAME");
+    System.out.println(custname.toUpperCase());
+  }
+} catch (SQLException sqle) {
+  // Handle exception thrown by one of the statements
+}

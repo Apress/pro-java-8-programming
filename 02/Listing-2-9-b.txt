@@ -1,0 +1,9 @@
+String myString = "Hi";
+System.out.println(myString);
+
+//...
+
+myString = "Hello";
+System.out.println(myString);
+myString += " there";
+System.out.println(myString);

@@ -1,0 +1,5 @@
+String[] stringsToSort;
+.
+.
+.
+Arrays.sort(stringsToSort);

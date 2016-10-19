@@ -1,0 +1,13 @@
+<!-- ... -->
+
+<xsl:template match="book">
+<html>
+<center><h1><xsl:value-of select="title"/></h1></center>
+<h4><xsl:value-of select="author"/></h4>
+<xsl:apply-templates select="tableOfContents"/>
+<h4><xsl:value-of select="publisher"/></h4>
+<img  src="&logoFile;" alt="&logoText;"/>
+</html>
+</xsl:template>
+
+<!-- ... -->

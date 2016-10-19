@@ -1,0 +1,17 @@
+resourceLock.lock();
+try {
+  doSomething();
+}
+catch (Exception e) {
+  try {
+    logError("An error occurred calling doFinally()");
+  }
+  catch (Exception le) {
+    throw new LoggingException(
+        "An error occurred during logging: " + le.getMessage(), le);
+  }
+  throw e;
+}
+finally {
+  resourceLock.unlock();
+}

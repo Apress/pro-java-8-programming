@@ -1,0 +1,9 @@
+public class TestScore {
+
+  private int percentCorrect;
+
+  public int getPercentCorrect() {
+    return percentCorrect;
+  }
+
+}

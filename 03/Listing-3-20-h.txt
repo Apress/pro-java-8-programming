@@ -1,0 +1,7 @@
+String dateText;
+.
+.
+.
+DateTimeFormatter mmddyyyyFormatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+LocalDate parsedDateTime = LocalDate.parse(dateText, mmddyyyyFormatter);
+System.out.println(parsedDateTime);

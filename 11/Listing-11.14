@@ -1,0 +1,7 @@
+Printable myPrintable1, myPrintable2, myPrintable3;
+PageFormat myFormat1, myFormat2, myFormat3;
+// ...
+Book myBook = new Book();
+myBook.append(myPrintable1, myFormat1);
+myBook.append(myPrintable2, myFormat2, 5);
+myBook.append(myPrintable3, myFormat3);

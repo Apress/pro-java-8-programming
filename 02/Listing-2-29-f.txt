@@ -1,0 +1,7 @@
+resourceLock.lock();
+try {
+  doSomething();
+}
+catch (Exception e) {
+}
+resourceLock.unlock();

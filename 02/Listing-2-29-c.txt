@@ -1,0 +1,12 @@
+String value;
+// ...
+try {
+  int intValue = Integer.parseInt(value);
+  System.out.println("Is a valid integer value");
+}
+catch (NumberFormatException nfe) {
+  System.out.println("Not a valid integer value");
+}
+finally {
+  System.out.println("This is always executed");
+}

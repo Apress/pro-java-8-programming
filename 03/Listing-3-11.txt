@@ -1,0 +1,4 @@
+button.addActionListener(actionEvent -> {
+        String command = actionEvent.getActionCommand();
+        System.out.println(command);
+        });

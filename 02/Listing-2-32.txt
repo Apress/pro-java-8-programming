@@ -1,0 +1,18 @@
+public class Passenger {
+
+    private String name;
+    private int cabinClass;
+
+    public Passenger(String nm, int type) {
+        name = nm;
+        switch (type) {
+           case TicketType.TYPE_COACH:
+           case TicketType.TYPE_BUSINESS:
+           case TicketType.TYPE_FIRST_CLASS:
+              break;
+        default:
+            assert false;
+        }
+        cabinClass = type;
+    }
+}

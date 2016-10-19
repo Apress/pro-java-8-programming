@@ -1,0 +1,25 @@
+import java.awt.GridLayout;
+import javax.swing.*;
+
+public class DataPanel extends JPanel {
+
+  protected JTextField nameField;
+  protected JTextField ageField;
+
+  public DataPanel() {
+    buildDisplay();
+  }
+
+  protected void buildDisplay() {
+    setLayout(new GridLayout(2, 2, 10, 5));
+    JLabel label = new JLabel("Name:");
+    add(label);
+    nameField = new JTextField(10);
+    add(nameField);
+    label = new JLabel("Age:");
+    add(label);
+    ageField = new JTextField(10);
+    add(ageField);
+  }
+
+}

@@ -1,0 +1,3 @@
+LocalDate first = LocalDate.of(2015, Month.FEBRUARY, 1);
+LocalDate second = LocalDate.of(2015, Month.FEBRUARY, 2);
+System.out.println(first.isBefore(second));

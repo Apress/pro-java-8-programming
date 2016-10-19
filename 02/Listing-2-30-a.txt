@@ -1,0 +1,8 @@
+protected void initialize() {
+  try {
+    readFileData();
+  }
+  catch (IOException e) {
+    throw new RuntimeException("An error occurred during initialization", e);
+  }
+}

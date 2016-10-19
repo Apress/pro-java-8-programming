@@ -1,0 +1,2 @@
+Arrays.sort(stringsToSort, (s1, s2) ->
+        Integer.compare(Integer.valueOf(s1), Integer.valueOf(s2)));

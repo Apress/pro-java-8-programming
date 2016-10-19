@@ -1,0 +1,7 @@
+public void performPrint() throws Exception {
+    PrintService service = PrintServiceLookup.lookupDefaultPrintService();
+    DocPrintJob job = service.createPrintJob();
+    DocFlavor flavor = DocFlavor.SERVICE_FORMATTED.PRINTABLE;
+    SimpleDoc doc = new SimpleDoc(new MyPrintable(), flavor, null);
+    job.print(doc, null);
+}

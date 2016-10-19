@@ -1,0 +1,10 @@
+/**
+ *  Add at least two integers together and returns the result.
+ */
+public static int addIntegers(int value1, int value2, int... values) {
+  int result = value1 + value2;
+  for (int value : values) {
+    result += value;
+  }
+  return result;
+}

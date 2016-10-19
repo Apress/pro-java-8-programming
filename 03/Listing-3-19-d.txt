@@ -1,0 +1,5 @@
+Instant someInstant;
+.
+.
+.
+Date someDate = new Date(someInstant.toEpochMilli());

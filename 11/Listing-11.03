@@ -1,0 +1,9 @@
+PrintService service = PrintServiceLookup.lookupDefaultPrintService();
+DocPrintJob job = service.createPrintJob();
+URL url = new URL(
+        " http://upload.wikimedia.org/wikipedia/en/e/eb/Apress-logo.png");
+DocFlavor flavor = DocFlavor.URL.GIF;
+Doc doc = new SimpleDoc(url, flavor, null);
+PrintRequestAttributeSet attrs = new HashPrintRequestAttributeSet();
+attrs.add(new Copies(2));
+job.print(doc, attrs);

@@ -1,0 +1,4 @@
+public interface ApplicationManager {
+    public void activate();
+    public void deactivate();
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+
+<book>
+  <title>Pro Java Programming</title>
+  <author>Brett Spell</author>
+  <publisher>Apress</publisher>
+
+  <tableOfContents showPageNumbers="yes">
+    <tocEntry>Printing</tocEntry>
+    <tocEntry>Cut &amp; Paste</tocEntry>
+    <tocEntry>Drag &amp; Drop</tocEntry>
+  </tableOfContents>
+</book>

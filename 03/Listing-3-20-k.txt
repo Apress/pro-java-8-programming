@@ -1,0 +1,3 @@
+Year year = Year.now();
+System.out.println(year.isLeap()
+        ? "This is a leap year" : "This is not a leap year");

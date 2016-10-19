@@ -1,0 +1,7 @@
+String userid, password;
+// ...
+try {
+  attemptLogon(userid, password);
+} catch (LogonFailedException lfe) {
+  System.out.println("Logon failed: " + lfe.getMessage());
+}

@@ -1,0 +1,6 @@
+public interface ApplicationManager {
+    public void activate();
+    public default void deactivate() {
+        System.exit(0);
+    }
+}

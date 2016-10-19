@@ -1,0 +1,1 @@
+LocalDateTime julyFourthNoon = LocalDateTime.of(2015, Month.JULY, 4, 12, 0, 0);

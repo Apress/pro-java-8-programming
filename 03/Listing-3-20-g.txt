@@ -1,0 +1,2 @@
+LocalDate newYearsDay = LocalDate.of(2015, Month.JANUARY, 1);
+DayOfWeek dayOfWeek = DayOfWeek.from(newYearsDay);

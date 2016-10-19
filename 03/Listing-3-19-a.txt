@@ -1,0 +1,1 @@
+Instant currentPointInTime = Instant.now();

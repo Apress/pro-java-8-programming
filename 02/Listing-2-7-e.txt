@@ -1,0 +1,7 @@
+public class Employee {
+
+  public int employeeID;
+  public String firstName;
+  public String lastName;
+
+}

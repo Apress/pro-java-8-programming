@@ -1,0 +1,2 @@
+DateTimeFormatter formatter = DateTimeFormatter.ofStyle("HH:mm a zzz MM/dd/yyyy");
+LocalDateTime dateTime = LocalDateTime.parse("12:30 PM CDT 07/04/2015", formatter);

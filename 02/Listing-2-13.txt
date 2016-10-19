@@ -1,0 +1,17 @@
+public class MailMessage implements Cloneable {
+
+  protected String sender;
+  protected String recipient;
+  protected StringBuffer messageText;
+
+  public MailMessage(String from, String to, String message) {
+    sender = from;
+    recipient = to;
+    messageText = new StringBuffer(message);
+  }
+
+  public StringBuffer getMessageText() {
+    return messageText;
+  }
+
+}

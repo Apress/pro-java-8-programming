@@ -1,0 +1,25 @@
+public class Employee implements Cloneable {
+
+  private int employeeID;
+  private String firstName;
+  private String lastName;
+
+  public Employee(int id, String first, String last) {
+    employeeID = id;
+    firstName = first;
+    lastName = last;
+  }
+
+  public int getEmployeeID() {
+    return employeeID;
+  }
+
+  public String getFirstName() {
+    return firstName;
+  }
+
+  public String getLastName() {
+    return lastName;
+  }
+
+}

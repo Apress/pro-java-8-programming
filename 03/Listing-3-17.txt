@@ -1,0 +1,10 @@
+List<String> items;
+String prefix;
+String suffix;
+.
+.
+.
+List<String> filteredList = items.stream().
+        filter(e -> (e.startsWith(prefix))).
+        filter(e -> (e.endsWith(suffix))).
+        collect(Collectors.toList());

@@ -1,0 +1,10 @@
+PrintService service = PrintServiceLookup.lookupDefaultPrintService();
+DocPrintJob job = service.createPrintJob();
+job.addPrintJobListener(new PrintJobAdapter() {
+    public void printDataTransferCompleted(PrintJobEvent event) {
+        System.out.println("Data transfer is complete");
+    }
+    public void printJobNoMoreEvents(PrintJobEvent event) {
+        System.out.println("No more events will be received");
+    }
+});

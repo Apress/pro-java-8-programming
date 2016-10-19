@@ -1,0 +1,2 @@
+LocalDate newYears2015 = LocalDate.of(2015, Month.JANUARY, 1);
+LocalDate newYears2016 = newYears2015.with(ChronoField.YEAR, 2016);

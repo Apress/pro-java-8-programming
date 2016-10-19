@@ -1,0 +1,26 @@
+import java.awt.*;
+import java.awt.print.*;
+import javax.print.*;
+import javax.print.attribute.*;
+import javax.print.attribute.standard.*;
+import javax.swing.ImageIcon;
+
+public class ImagePrint {
+
+  protected ImageIcon printImage;
+
+  public static void main(String[] args) throws Exception {
+    ImagePrint ip = new ImagePrint(args[0]);
+    ip.performPrint();
+    System.exit(0);
+  }
+
+  public ImagePrint(String fileName) {
+    printImage = new javax.swing.ImageIcon(fileName);
+  }
+
+  private void performPrint() throws Exception {
+    // Remaining code goes here ...
+  }
+
+}

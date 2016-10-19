@@ -1,0 +1,16 @@
+public enum TicketType {
+
+    TYPE_COACH(1),
+    TYPE_BUSINESS(2),
+    TYPE_FIRST_CLASS(3);
+
+    private int value;
+
+    private TicketType(int intValue) {
+        value = intValue;
+    }
+    public int getValue() {
+        return value;
+    }
+
+}

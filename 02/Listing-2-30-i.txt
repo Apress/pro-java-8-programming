@@ -1,0 +1,16 @@
+public class processPassenger(Passenger passenger) {
+    int cabinClass = passenger.getCabinClass();
+    switch (cabinClass) {
+        case TYPE_COACH:
+           processCoachPassenger(passenger);
+           break;
+        case TYPE_BUSINESS:
+           processBusinessPassenger(passenger);
+           break;
+        case TYPE_FIRST_CLASS:
+           processFirstClassPassenger(passenger);
+           break;
+        default:
+           assert false;
+    }
+}

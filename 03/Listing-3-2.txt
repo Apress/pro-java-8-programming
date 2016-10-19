@@ -1,0 +1,6 @@
+public void startExecution()
+{
+    ThreadPoolExecutor executor = getExecutor();
+    Runnable newInstance = new MyRunnable();
+    executor.execute(newInstance);
+}

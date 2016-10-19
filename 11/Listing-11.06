@@ -1,0 +1,8 @@
+double paperWidth = 8.5 * 72;
+double paperHeight = 11 * 72;
+double xMargin = 1.0 * 72;
+double yMargin = 1.5 * 72;
+double areaWidth = paperWidth - (xMargin * 2);
+double areaHeight = paperHeight - (yMargin * 2);
+Paper p = new Paper();
+p.setImageableArea(xMargin, yMargin, areaWidth, areaHeight);

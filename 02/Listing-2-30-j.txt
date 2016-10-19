@@ -1,0 +1,8 @@
+ResultSet results;
+.
+.
+.
+// Create a passenger object from the current row of the ResultSet
+Passenger passenger = createPassenger(results);
+// See if any warnings were generated for the ResultSet
+assert (passenger.getWarnings() == null);

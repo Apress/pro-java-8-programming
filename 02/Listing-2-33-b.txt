@@ -1,0 +1,5 @@
+public enum TicketType {
+    TYPE_COACH,
+    TYPE_BUSINESS,
+    TYPE_FIRST_CLASS
+}

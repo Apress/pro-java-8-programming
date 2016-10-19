@@ -1,0 +1,3 @@
+LocalDate today = LocalDate.now();
+DateTimeFormatter mmddyyyyFormatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+System.out.println(today.format(mmddyyyyFormatter);

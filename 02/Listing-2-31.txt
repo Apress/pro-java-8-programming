@@ -1,0 +1,5 @@
+public class TicketType {
+    public int TYPE_COACH = 1;
+    public int TYPE_BUSINESS = 2;
+    public int TYPE_FIRST_CLASS = 3;
+}

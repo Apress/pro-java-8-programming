@@ -1,0 +1,9 @@
+public int print(Graphics g, PageFormat pf, int pageIndex) {
+   g.translate((int)(pf.getImageableX()),
+       (int)(pf.getImageableY()));
+   if (pageIndex == 0) {
+    g.drawImage(printImage.getImage(), 0, 0, null);
+      return Printable.PAGE_EXISTS;
+   }
+   return Printable.NO_SUCH_PAGE;
+}

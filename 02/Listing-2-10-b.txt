@@ -1,0 +1,4 @@
+  public Student(List<TestScore> scores, String name) {
+    this.testScores = Collections.unmodifiableList(scores);
+    this.name = name;
+  }

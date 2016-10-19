@@ -1,0 +1,13 @@
+public void startExecution() {
+    ThreadPoolExecutor executor = getExecutor();
+    Runnable newInstance = new Runnable() {
+        public void run() {
+            performLongRunningTask();
+        }
+    };
+    executor.execute(newInstance);
+}
+
+void performLongRunningTask() {
+    // Do some work here
+}

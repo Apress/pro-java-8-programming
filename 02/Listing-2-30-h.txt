@@ -1,0 +1,16 @@
+int age;
+.
+.
+.
+if ((age > 12) && (age < 20)) {
+  // Handle teenagers here
+}
+else if (age >= 65) {
+  // Handle seniors here
+}
+else if (age >= 0) {
+  // Handle all other valid ages here
+}
+else {
+  assert false;
+}

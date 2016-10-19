@@ -1,0 +1,2 @@
+YearMonth december2015 = YearMonth.of(2015, Month.DECEMBER);
+LocalDate christmas2015 = december2015.atDay(25);

@@ -1,0 +1,17 @@
+public class DuplicationSample {
+
+  protected int firstValue;
+  protected String secondValue;
+  protected Integer thirdValue;
+
+  public DuplicationSample(int first, String second, Integer third) {
+    firstValue = first;
+    secondValue = second;
+    thirdValue = third;
+  }
+
+  public DuplicationSample(int first, String second) {
+    this(first, second, new Integer(0));
+  }
+
+}

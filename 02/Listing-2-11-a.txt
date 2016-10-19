@@ -1,0 +1,6 @@
+Object unknown = getAnObject();
+if (unknown instanceof Cloneable) {
+  System.out.println("I can create a clone of this object");
+} else {
+  System.out.println("I might not be able to create a clone of this object");
+}

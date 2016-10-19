@@ -1,0 +1,16 @@
+String userid, password;
+// ...
+try {
+  attemptLogon(userid, password);
+}
+//  Handle the case where the password was invalid
+catch (InvalidPasswordException ipe) {
+  //  Log the logon attempt and possibly lock the userid
+  //  to prevent more logon attempts
+  recordFailedLogon(userid);
+  System.out.println("Logon failed: " + ipe.getMessage());
+}
+//  Handle all other types of errors
+catch (LogonFailedException lfe) {
+  System.out.println("Logon failed: " + lfe.getMessage());
+}

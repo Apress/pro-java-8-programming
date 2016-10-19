@@ -1,0 +1,35 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class DataFrame extends JFrame {
+
+  public static void main(String[] args) {
+    DataFrame df = new DataFrame();
+    df.setVisible(true);
+  }
+
+  public DataFrame() {
+    super("Enter Data");
+    buildLayout();
+    pack();
+  }
+
+  protected void buildLayout() {
+    Container pane = getContentPane();
+    pane.setLayout(new BorderLayout());
+    pane.add(new DataPanel(), BorderLayout.CENTER);
+    JButton button = new JButton("Ok");
+    button.addActionListener(new ActionListener() {
+      public void actionPerformed(ActionEvent event) {
+        System.exit(0);
+      }
+    }
+    );
+    JPanel panel = new JPanel();
+    panel.setLayout(new FlowLayout(FlowLayout.CENTER, 0, 0));
+    panel.add(button);
+    pane.add(panel, BorderLayout.SOUTH);
+  }
+
+}

@@ -1,0 +1,5 @@
+String test = "Hello";
+// Prints the index of the first occurrence of 'e', in this case 1
+System.out.println(test.indexOf('e'));
+// Prints -1, since the character 'z' isn't found in the string
+System.out.println(test.indexOf('z'));

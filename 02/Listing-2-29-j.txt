@@ -1,0 +1,7 @@
+public class LoggingException extends Exception {
+
+  public LoggingException(String message, Exception cause) {
+    super(message, cause);
+  }
+
+}

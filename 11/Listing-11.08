@@ -1,0 +1,9 @@
+public int print(Graphics g, PageFormat pageFormat, int pageNumber) {
+  if (pageNumber == 0) {
+    // Rendering logic would normally go here
+    return Printable.PAGE_EXISTS;
+  }
+  else {
+    return Printable.NO_SUCH_PAGE;
+  }
+}
